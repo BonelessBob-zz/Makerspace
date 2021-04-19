@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-image: radial-gradient(lightyellow, azure);
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+
+  // Remove scrollbars
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+
+  .text {
+    font-size: 2rem;
+    text-align: center;
+    font-family: monospace;
+    margin: 0;
+  }
+}
+
+// Remove scrollbars for chrome
+.app::-webkit-scrollbar{
+  display: none;
+}
+
+.toolbar{
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+
+  & {
+    background-color: transparent !important;
+  }
+  .wrapper{
+    color: #387ee6;
+  }
+
+  .tooltip{
+    font-size: 1rem;
+    font-family: monospace;
+  }
+
+  .icon{
+    width: 5vw;
+    height: 5vh;
+
+    // IF ON MOBILE
+    @media (max-width: 1024px) {
+      width: 10vw;
+      height: 10vh;
+    }
+  }
+}
+
+.card{
+  background-color: #ffffff;
+  border-radius: 30px !important;
+
+  @media (max-width: 1024px) {
+    width: 70vw;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50vw;
+  }
+
+  .image{
+    height: 40vh;
+    background-position: top;
+  }
+  .content{
+    justify-content: space-around;
+  }
+
+  .header{
+    font-size: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+  .description{
+    font-size: 2vh;
+    text-align: center;
+    justify-content: space-around;
+    font-family: monospace;
+    overflow-y: scroll;
+    height: 20vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .description::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+html body{
+  height: 100%;
+}
