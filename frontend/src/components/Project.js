@@ -12,7 +12,7 @@ import {
     requirePropFactory
  } from "@material-ui/core";
 
- var Post = () => {
+ var Project = () => {
      return(
          <Card className={styles.card}>
              <CardActionArea className={styles.action}>
@@ -38,4 +38,4 @@ import {
      )
  }
 
- export default withRouter(Post)
+ export default withRouter(Project)

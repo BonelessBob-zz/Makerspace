@@ -1,5 +1,9 @@
 import React from 'react'
-import Post from './Post'
+import Project from './Project'
+import styles from '../main.scss'
+import { 
+    Typography
+ } from "@material-ui/core"
 
 
 class Homepage extends React.Component{
@@ -14,7 +18,9 @@ class Homepage extends React.Component{
 
     render() {
         return(
-            <Post />
+            <Typography variant="p" component="p" className={styles.text}>
+                Offisielle Makerspace Nettsiden!
+            </Typography>
         )
     }
 

@@ -46,6 +46,11 @@
     color: #387ee6;
   }
 
+  .bottomNavAction {
+    border-radius: 10%;
+
+  }
+
   .tooltip{
     font-size: 1rem;
     font-family: monospace;
@@ -97,12 +102,32 @@
     font-family: monospace;
     overflow-y: scroll;
     height: 20vh;
+
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
   .description::-webkit-scrollbar{
     display: none;
   }
+
+
+  .headerInput{
+    font-size: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+  .descriptionInput{
+    text-align: center;
+    justify-content: space-around;
+    font-family: monospace;
+  }
+
+  .dropzone{
+    border-radius: 30px;
+  }
+
 }
 
 html body{

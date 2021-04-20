@@ -39,7 +39,7 @@ var Toolbar = () => {
             {
                 items.map((item) => (
                     <Tooltip key={item.name.toLowerCase()} title={<h2 className={styles.topoltip}>{item.name}</h2>}>
-                        <BottomNavigationAction key={item.name.toLowerCase()} icon={item.icon} onClick={item.onclick} showLabel={false} classes={{wrapper: styles.wrapper}} />
+                        <BottomNavigationAction key={item.name.toLowerCase()} icon={item.icon} onClick={item.onclick} showLabel={false} classes={{wrapper: styles.wrapper, root: styles.bottomNavAction}} />
                     </Tooltip>
                 ))
             }

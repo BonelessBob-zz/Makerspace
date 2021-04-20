@@ -1,7 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styles from './main.scss';
 import Toolbar from './components/Toolbar'
 import Homepage from './components/Homepage'
+import Projects from './components/Projects'
+import User from './components/User'
+import Createproject from './components/Createproject'
 import { makeStyles } from '@material-ui/core/styles';
 import {
   BrowserRouter as Router,
@@ -48,6 +51,9 @@ const App = () => {
         <Toolbar />
         <Switch>
           <Route exact path="/" render={() => <Homepage changeBg={changeBg}/>} />
+          <Route exact path="/projects" render={() => <Projects changeBg={changeBg}/>} />
+          <Route exact path="/user" render={() => <User changeBg={changeBg}/>} />
+          <Route exact path="/createproject" render={() => <Createproject changeBg={changeBg}/>} />
 
         </Switch>
       </Router>
