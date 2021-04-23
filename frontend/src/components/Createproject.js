@@ -5,9 +5,23 @@ import {
     Card,
     CardContent,
     Typography,
-    TextField
+    TextField,
+    Button,
+    createMuiTheme, 
+    ThemeProvider
  } from "@material-ui/core";
  import { DropzoneArea } from 'material-ui-dropzone';
+
+ /* const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: "HEXADECIMAL COLOR"
+      },
+      secondary: {
+        main: "HEXADECIMAL COLOR"
+      }
+    }
+  }); */
 
  class Createproject extends React.Component {
 
@@ -35,6 +49,7 @@ import {
                     <Typography variant="body2" color="textSecondary" component="p" className={styles.descriptionInput}>
                         <TextField placeholder="Description" variant="filled" fullWidth multiline/>
                     </Typography>
+                    <Button className={styles.submitButton}>Submit</Button>
                 </CardContent>
             </Card>
          )
