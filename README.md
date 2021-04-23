@@ -3,7 +3,7 @@
 This is the WIP Makerspace website, built on Django and ReactJS with Material-UI.   
 
 ### Installation
-\
+
 To install all npm packages run:
 > npm install
 
