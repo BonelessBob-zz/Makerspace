@@ -7,4 +7,4 @@ To install all npm packages run:
 After installing all packages, to start the webserver run:
 > npx start
    
-*Currently the Django backend is not working*
+**Currently the Django backend is not working**
